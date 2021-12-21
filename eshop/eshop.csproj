@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\font-awesome.min.css" />
+    <None Include="wwwroot\css\nouislider.min.css" />
+    <None Include="wwwroot\css\slick-theme.css" />
+    <None Include="wwwroot\css\slick.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\fonts\slick.eot" />
+    <None Include="wwwroot\fonts\slick.svg" />
+    <None Include="wwwroot\fonts\slick.ttf" />
+    <None Include="wwwroot\fonts\slick.woff" />
+    <None Include="wwwroot\img\hotdeal.png" />
+    <None Include="wwwroot\img\logo.png" />
+    <None Include="wwwroot\img\product01.png" />
+    <None Include="wwwroot\img\product02.png" />
+    <None Include="wwwroot\img\product03.png" />
+    <None Include="wwwroot\img\product04.png" />
+    <None Include="wwwroot\img\product05.png" />
+    <None Include="wwwroot\img\product06.png" />
+    <None Include="wwwroot\img\product07.png" />
+    <None Include="wwwroot\img\product08.png" />
+    <None Include="wwwroot\img\product09.png" />
+    <None Include="wwwroot\img\shop01.png" />
+    <None Include="wwwroot\img\shop02.png" />
+    <None Include="wwwroot\img\shop03.png" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\jquery.zoom.min.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\nouislider.min.js" />
+    <None Include="wwwroot\js\slick.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eshop.DataAccess\eshop.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
