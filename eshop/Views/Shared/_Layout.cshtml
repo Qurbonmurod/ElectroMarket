@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> @ViewData["Title"] - Ecommerce </title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="~/css/slick.css" />
     <link type="text/css" rel="stylesheet" href="~/css/slick-theme.css" />
@@ -41,7 +43,7 @@
                     <div class="col-md-6">
                         <div class="header-search">
                             <form>
-                                <select class="input-select">
+                                <select class="input-select" asp-items="Html.GetEnumSelectList<Categories>()">
                                 </select>
                                 <input class="input" placeholder="Eng ishonchli mahsulotlar ">
                                 <button class="search-btn">Qidirish</button>
