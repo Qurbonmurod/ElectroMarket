@@ -1,6 +1,9 @@
+using eshop.DataAccess;
+using eshop.DataAccess.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +27,10 @@ namespace eshop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IComputerRepository, ComputerRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IMobileRepository, MobileRepository>();
+            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

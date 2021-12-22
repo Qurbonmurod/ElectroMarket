@@ -1,4 +1,5 @@
 ﻿using eshop.Models;
+using eshop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,7 +21,12 @@ namespace eshop.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeIndexViewModel model = new HomeIndexViewModel()
+            {
+                Title = "Bosh sahifa"
+            };
+
+            return View(model);
         }
 
         public IActionResult Privacy()
