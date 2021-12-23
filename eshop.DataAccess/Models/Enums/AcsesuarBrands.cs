@@ -4,9 +4,8 @@ using System.Text;
 
 namespace eshop.DataAccess.Models.Enums
 {
-    public enum MobileBrands
+    public enum AcsesuarBrands
     {
-        Samsung,
-        RealMi
+        NVidia
     }
 }
