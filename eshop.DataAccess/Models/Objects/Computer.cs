@@ -5,7 +5,7 @@ using System.Text;
 
 namespace eshop.DataAccess.Models
 {
-    public class Computer : Product
+    public class T : Product
     {
         public ComputerBrands Brand { get; set; }
     }

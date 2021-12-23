@@ -13,14 +13,14 @@ namespace eshop.DataAccess.Models
             this.dbContext = dbContext;
         }
 
-        Computer IComputerRepository.Create(Computer computer)
+        T IComputerRepository.Create(T computer)
         {
             dbContext.Computers.Add(computer);
             dbContext.SaveChanges();
             return computer;
         }
 
-        Computer IComputerRepository.Delete(int id)
+        T IComputerRepository.Delete(int id)
         {
             var computer = dbContext.Computers.Find(id);
             if(computer != null)
@@ -31,17 +31,17 @@ namespace eshop.DataAccess.Models
             return computer;
         }
 
-        IEnumerable<Computer> IComputerRepository.GetAllComputers()
+        IEnumerable<T> IComputerRepository.GetAllComputers()
         {
             return dbContext.Computers;
         }
 
-        Computer IComputerRepository.GetComputer(int id)
+        T IComputerRepository.GetComputer(int id)
         {
             return dbContext.Computers.Find(id);
         }
 
-        Computer IComputerRepository.Update(Computer updatecomputer)
+        T IComputerRepository.Update(T updatecomputer)
         {
             var computer = dbContext.Computers.Attach(updatecomputer);
             computer.State = Microsoft.EntityFrameworkCore.EntityState.Modified;

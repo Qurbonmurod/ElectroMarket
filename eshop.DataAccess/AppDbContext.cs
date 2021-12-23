@@ -13,7 +13,7 @@ namespace eshop.DataAccess
             
         }
         
-        public DbSet<Computer> Computers { get; set; }
+        public DbSet<T> Computers { get; set; }
         public DbSet<Mobile> Mobiles { get; set; }
         public DbSet<User> Users { get; set; }
     }

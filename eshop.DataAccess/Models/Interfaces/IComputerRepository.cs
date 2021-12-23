@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.SS.Formula.Functions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,15 +7,15 @@ namespace eshop.DataAccess.Models
 {
     public interface IComputerRepository
     {
-        Computer GetComputer(int id);
+        T GetComputer(int id);
 
-        IEnumerable<Computer> GetAllComputers();
+        IEnumerable<T> GetAllComputers();
 
-        Computer Create(Computer computer);
+        T Create(T computer);
 
-        Computer Update(Computer computer);
+        T Update(T computer);
 
-        Computer Delete(int id);
+        T Delete(int id);
 
     }
 }
