@@ -107,13 +107,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /ACCOUNT -->
                 </div>
-                <!-- row -->
             </div>
-            <!-- container -->
         </div>
-        <!-- /MAIN HEADER -->
     </header>
     <nav id="navigation">
         <!-- container -->
@@ -130,54 +126,15 @@
                     <li><a href="#">Cameras</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
-                <!-- /NAV -->
             </div>
-            <!-- /responsive-nav -->
         </div>
-        <!-- /container -->
     </nav>
 
     @RenderBody()
 
-    <div id="newsletter" class="section">
-        <!-- container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="newsletter">
-                        <p>Eng yangi mahsulotlar va chegirmalardan <br /><strong>xabardor bo'ling</strong></p>
-                        <form>
-                            <input class="input" type="email" placeholder="Elektron pochtangiz">
-                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Yuborish</button>
-                        </form>
-                        <ul class="newsletter-follow">
-                            <li>
-                                <a href="#"><i class="fa fa-telegram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
     <footer id="footer">
-        <!-- top footer -->
         <div class="section">
-            <!-- container -->
             <div class="container">
-                <!-- row -->
                 <div class="row">
                     <div class="col-md-3 col-xs-6">
                         <div class="footer">
@@ -196,10 +153,9 @@
                             <h3 class="footer-title">Mahsulotlar</h3>
                             <ul class="footer-links">
                                 <li><a href="#">Hot deals</a></li>
-                                <li><a href="#">Laptops</a></li>
-                                <li><a href="#">Smartphones</a></li>
-                                <li><a href="#">Cameras</a></li>
-                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Hot deals</a></li>
+                                <li><a href="#">Hot deals</a></li>
+                                <li><a href="#">Hot deals</a></li>
                             </ul>
                         </div>
                     </div>
@@ -210,10 +166,11 @@
                         <div class="footer">
                             <h3 class="footer-title">Bo'limlar</h3>
                             <ul class="footer-links">
-                                <li><a href="#">Biz haqimizda</a></li>
-                                <li><a href="#">Aloqa</a></li>
-                                <li><a href="#">Foydalanish shartlari</a></li>
-                                <li><a href="#">Xavfsizlik shartlari</a></li>
+                                <li><a asp-controller="home">Bosh sahifa</a></li>
+                                <li><a asp-controller="home" asp-action="about">Biz haqimizda</a></li>
+                                <li><a asp-controller="home" asp-action="contact">Aloqa</a></li>
+                                <li><a asp-controller="home" asp-action="privacy">Foydalanish shartlari</a></li>
+                                <li><a asp-controller="home" asp-action="privacy">Xavfsizlik shartlari</a></li>
                             </ul>
                         </div>
                     </div>
@@ -222,19 +179,15 @@
                         <div class="footer">
                             <h3 class="footer-title">Xizmatlar</h3>
                             <ul class="footer-links">
-                                <li><a href="#">Mening hisobim</a></li>
-                                <li><a href="#">Xaridlarim</a></li>
-                                <li><a href="#">Yordam</a></li>
-                            </ul>
+                                <li><a asp-controller="home" asp-action="checkout">Mening hisobim</a></li>
+                                <li><a asp-controller="home" asp-action="checkout">Xaridlarim</a></li>
+                                <li><a asp-controller="home" asp-action="help">Yordam</a></li>
+                            </ul> 
                         </div>
                     </div>
                 </div>
-                <!-- /row -->
             </div>
-            <!-- /container -->
         </div>
-        <!-- /top footer -->
-        <!-- bottom footer -->
         <div id="bottom-footer" class="section">
             <div class="container">
                 <!-- row -->

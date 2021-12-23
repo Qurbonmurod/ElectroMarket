@@ -8,7 +8,9 @@ namespace eshop.DataAccess.Enums
     {
         Barchasi,
         Kompyuterlar,
+        Printerlar,
         Aksessuarlar,
-        Telefonlar
+        Kompyuter_qismlari,
+        Boshqalar
     }
 }
