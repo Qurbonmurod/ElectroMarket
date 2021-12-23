@@ -1,5 +1,6 @@
 ﻿using eshop.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,8 +14,5 @@ namespace eshop.DataAccess
             
         }
         
-        public DbSet<T> Computers { get; set; }
-        public DbSet<Mobile> Mobiles { get; set; }
-        public DbSet<User> Users { get; set; }
     }
 }
