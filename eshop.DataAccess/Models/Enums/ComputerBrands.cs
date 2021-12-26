@@ -11,6 +11,7 @@ namespace eshop.DataAccess.Enums
         HP,
         Lenovo,
         Dell,
-        Samsung
+        Samsung,
+        MacBook
     }
 }

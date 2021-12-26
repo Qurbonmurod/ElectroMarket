@@ -5,24 +5,21 @@ using System.Text;
 
 namespace eshop.DataAccess.Models
 {
-    public class User
+    public class Market
     {
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(20)]
-        [MinLength(6)]
         public string Name { get; set; }
 
-        [Required]
-        public string Email { get; set; }
 
         [Required]
         public string Phone { get; set; }
 
         [Required]
-        [MinLength(6)]
-        //[RegularExpression("\w+([-+.']\w+)*@\w+([-.']\w+)*\.\w+([-.']\w+)*")]
-        public string Password { get; set; }
+        public string Location { get; set; }
+
+        public string Email { get; set; }
+        public string ImagePath { get; set; }
     }
 }

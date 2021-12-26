@@ -10,7 +10,7 @@ namespace eshop.DataAccess.Enums
         Kompyuterlar,
         Printerlar,
         Aksessuarlar,
-        Kompyuter_qismlari,
+        Qurilmalar,
         Boshqalar
     }
 }

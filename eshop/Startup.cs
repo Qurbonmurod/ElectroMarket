@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,9 +28,8 @@ namespace eshop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IComputerRepository, ComputerRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IMobileRepository, MobileRepository>();
+            services.AddScoped<IRepository<Market>, MarketRepository>();
+            services.AddScoped<IDisposable, UnitOfWork>();
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
         }
 
@@ -59,6 +59,7 @@ namespace eshop
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@model eshop.ViewModels.HomeIndexViewModel
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> @ViewData["Title"] - Ecommerce </title>
+    <title>@ViewData["Title"] - Ecommerce </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -21,9 +22,9 @@
         <div id="top-header">
             <div class="container">
                 <ul class="header-links pull-left">
-                    <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i> @Model.Market.Phone</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> @Model.Market.Email</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> @Model.Market.Location</a></li>
                 </ul>
             </div>
         </div>
@@ -182,7 +183,7 @@
                                 <li><a asp-controller="home" asp-action="checkout">Mening hisobim</a></li>
                                 <li><a asp-controller="home" asp-action="checkout">Xaridlarim</a></li>
                                 <li><a asp-controller="home" asp-action="help">Yordam</a></li>
-                            </ul> 
+                            </ul>
                         </div>
                     </div>
                 </div>
